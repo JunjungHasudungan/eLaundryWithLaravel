@@ -16,17 +16,6 @@
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
 
-                    <x-jet-nav-link href="{{ route('show_users') }}" :active="request()->routeIs('show_users')">
-                        {{ __('Users') }}
-                    </x-jet-nav-link>
-                    
-                    <x-jet-nav-link href="{{ route('role') }}" :active="request()->routeIs('role')">
-                        {{ __('Roles') }}
-                    </x-jet-nav-link>
-
-                    <x-jet-nav-link href="{{ route('showCategories') }}" :active="request()->routeIs('showCategories')">
-                        {{ __('Categories') }}
-                    </x-jet-nav-link>
                     
                 </div>
             </div>

@@ -34,22 +34,9 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    // Route::get('/roles', [ RoleController::class, 'index' ])->name('index');
-    // Route::resource( '/roles', App\Http\Controllers\Admin\RoleController::class );
-    Route::get('member', Member::class)->name('member');
-    Route::get('roles', Roles::class)->name('role');
-    Route::get('categories', Categories::class)->name('categories');
 
-    // memgambil data melalui class User Livewire 
-    Route::get('/users', ShowUsers::class)->name('show_users');
-    // Route::get('roles', );
-    Route::get('/categories', ShowCategories::class)->name('showCategories');
+    // Route::get('member', Member::class)->name('member');
+ 
 
 });
 
-// Route::get('/roles', RoleController::class);
-// Route::group(function(){
-//     Route::resources([
-//         'roles' => RoleController::class,
-//     ]);
-// });
