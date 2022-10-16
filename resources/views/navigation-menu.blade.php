@@ -20,6 +20,10 @@
                         {{ __('Members') }}
                     </x-jet-nav-link>
 
+                    <x-jet-nav-link href="{{ route('showOutlets') }}" :active="request()->routeIs('showOutlets')">
+                        {{ __('Outlets') }}
+                    </x-jet-nav-link>
+
                     
                 </div>
             </div>
