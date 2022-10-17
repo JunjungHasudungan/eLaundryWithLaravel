@@ -12,8 +12,8 @@ class ShowPaket extends Component
 
     public function render()
     {
-        $this->pakets = Paket::select('name')->with('outlet')->get();
-        // dd($this->pakets);
+        $this->pakets = Paket::with('outlet')->get();
+        dd($this->pakets);
         return view('livewire.show-paket', [
             'pakets' => $this->pakets
         ]);

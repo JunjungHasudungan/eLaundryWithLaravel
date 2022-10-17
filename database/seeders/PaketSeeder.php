@@ -23,7 +23,7 @@ class PaketSeeder extends Seeder
                 'outlet_id'     => 1
             ],
             [
-                'name'          => 'premiun',
+                'name'          => 'reguler',
                 'type'          => 2,
                 'price'         => 6500,
                 'outlet_id'     => 2

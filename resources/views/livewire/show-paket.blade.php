@@ -8,7 +8,10 @@
         <li class="text-center mt-5">
             {{$item->name }}
         </li>
-        <li>
+        <li class="text-center mt-5">
+           nama paket: {{ $item->outlet->name }}
+        </li>
+        <li class="text-center mt-5">
             {{$item->price}}
         </li>
         @empty
