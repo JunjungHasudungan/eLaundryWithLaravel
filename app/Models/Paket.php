@@ -10,4 +10,9 @@ class Paket extends Model
     use HasFactory;
 
     protected $guarded=[];
+
+    public function outlet()
+    {
+        return $this->belongsTo(Outlet::class, 'outlet_id');
+    }
 }

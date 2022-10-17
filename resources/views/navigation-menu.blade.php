@@ -24,6 +24,10 @@
                         {{ __('Outlets') }}
                     </x-jet-nav-link>
 
+                    <x-jet-nav-link href="{{ route('showPaket') }}" :active="request()->routeIs('showPaket')">
+                        {{ __('Pakets') }}
+                    </x-jet-nav-link>
+
                     
                 </div>
             </div>

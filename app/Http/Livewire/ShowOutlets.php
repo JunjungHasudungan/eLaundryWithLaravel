@@ -16,7 +16,7 @@ class ShowOutlets extends Component
 
         // Outlet::/ 
 
-        dd($this->outlets);
+        // dd($this->outlets);
         return view('livewire.show-outlets', [
             'outlets' => $this->outlets
         ]);
