@@ -10,6 +10,21 @@ class Transaction extends Model
     use HasFactory;
 
     protected $table = 'transactions';
-    
+
     protected $guarded=[];
+
+    public function outlet()
+    {
+        return $this->belongsTo(Outlet::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function detailTransaction()
+    {
+        return $this->hasOne(DetailTransaction::class);
+    }
 }
