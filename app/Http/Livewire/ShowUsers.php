@@ -7,17 +7,43 @@ use Livewire\Component;
 
 class ShowUsers extends Component
 {
-    public $users;
+    public $name, $email, $password, $users, $id_user, $role_id;
+
+    public $is_modal = false;
+
 
     public function render()
     {
-        $this->users = User::with('role')->where('role_id', 4)->get();
+        $this->users = User::with('role')->get();
 
-        // dd($this->users);
+        // dd($this->users->all());
 
         return view('livewire.show-users', [
-            'users' => User::orderBy('name')->where('role_id', 4)->get()
+            'users' => $this->users
         ]);
+    }
+
+    public function resetModal()
+    {
+        $this->name = '';
+        $this->email = '';
+        $this->password = '';
+        $this->id = '';
+    }
+
+    public function openModal()
+    {
+        $this->is_modal = true;
+    }
+
+    public function closeModal()
+    {
+        $this->is_modal = false;
+    }
+
+    public function openProfileUser()
+    {
+        $this->openModal();
     }
 
     public function showMembers()
