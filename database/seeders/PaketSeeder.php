@@ -18,13 +18,13 @@ class PaketSeeder extends Seeder
         $pakets = [
             [
                 'name'          => 'ekspress',
-                'type'          => 1,
+                // 'type'          => 1,
                 'price'         => 6000,
                 'outlet_id'     => 1
             ],
             [
                 'name'          => 'reguler',
-                'type'          => 2,
+                // 'type'          => 2,
                 'price'         => 6500,
                 'outlet_id'     => 2
             ]
