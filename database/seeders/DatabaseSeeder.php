@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             OutletSeeder::class, 
             PaketSeeder::class,
+            PostSeeder::class,
         ]);
     }
 }

@@ -3,7 +3,13 @@
     <h1 class="text-center mt-5">
         Test Show Paket
     </h1>
-    <ul>
+    <button>
+        <div>
+            <livewire:counter :count="$count" />
+            {{-- @livewire('counter', ['count' => $count]) --}}
+        </div>
+    </button>
+    {{-- <ul>
         @forelse ($pakets as $item)
         <li class="text-center mt-5">
             {{$item->name }}
@@ -17,5 +23,5 @@
         @empty
             <li>Tidak ada data</li>
         @endforelse
-    </ul>
+    </ul> --}}
 </div>

@@ -40,7 +40,7 @@
                     </a>
                 @endif --}}
 
-                <x-jet-button class="ml-4 flex item-center">
+                <x-jet-button class="m-auto text-center w-full justify-center flex item-center">
                     {{ __('Log in') }}
                 </x-jet-button>
             </div>
