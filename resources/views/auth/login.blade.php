@@ -40,8 +40,8 @@
                     </a>
                 @endif --}}
 
-                <x-jet-button class="ml-4 flex item-center">
-                    {{ __('Log in') }}
+                <x-jet-button class="text-center m-full w-full flex justify  item-center">
+                    <span class="text-centerm-auto space-y-2">{{ __('Log in') }}</span>
                 </x-jet-button>
             </div>
         </form>
