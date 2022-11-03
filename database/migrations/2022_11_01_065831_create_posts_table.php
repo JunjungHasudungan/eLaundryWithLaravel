@@ -1,7 +1,5 @@
 <?php
 
-use App\Enums\JenisPaket;
-use App\Models\Outlet;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -15,12 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pakets', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('type')->default(JenisPaket::Kiloan->value);
-            $table->integer('price');
-            $table->foreignIdFor(Outlet::class)->cascadeOnDelete();
+            $table->string('title', 100);
             $table->timestamps();
         });
     }
@@ -32,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pakets');
+        Schema::dropIfExists('posts');
     }
 };

@@ -5,8 +5,10 @@
 // // use App\Http\Controllers\RoleController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Livewire\Outlets;
+use App\Http\Livewire\Posts;
 use App\Http\Livewire\ShowOutlets;
 use App\Http\Livewire\ShowPaket;
+use App\Http\Livewire\ShowPost;
 use App\Http\Livewire\ShowUsers;
 use Illuminate\Support\Facades\Route;
 
@@ -37,6 +39,7 @@ Route::middleware([
     Route::get('/member', ShowUsers::class)->name('showUsers');
     Route::get('/outlets', ShowOutlets::class)->name('showOutlets');
     Route::get('/pakets', ShowPaket::class)->name('showPaket');
+    Route::get('posts', ShowPost::class)->name('showPost');
     // Route::resource('outlets', Outlets::class);
 
 });

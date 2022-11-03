@@ -40,8 +40,13 @@
                     </a>
                 @endif --}}
 
+<<<<<<< HEAD
                 <x-jet-button class="m-auto text-center w-full justify-center flex item-center">
                     {{ __('Log in') }}
+=======
+                <x-jet-button class="text-center m-full w-full flex justify  item-center">
+                    <span class="text-centerm-auto space-y-2">{{ __('Log in') }}</span>
+>>>>>>> 9e14ce35d884afc1d26c1050ca880e2998315d05
                 </x-jet-button>
             </div>
         </form>

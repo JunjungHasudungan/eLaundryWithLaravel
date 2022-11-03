@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class Posts extends Component
 {
+<<<<<<< HEAD
     // deklarasi variable yang dibutuhkan
     public $posts, $id_post, $name;
     public $is_modal = 0;
@@ -50,4 +51,12 @@ class Posts extends Component
         $this->closeModal();
         $this->resetField();
     }
+=======
+    public function render()
+    {
+        return view('livewire.posts', [
+            'posts' => Post::all()
+        ]);
+    }
+>>>>>>> 9e14ce35d884afc1d26c1050ca880e2998315d05
 }

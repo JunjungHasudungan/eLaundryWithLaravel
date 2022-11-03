@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <x-slot name="header">
     <h2 class="text-semibold text-xl text-green-800 leading-tight">
         Data Semua Post
@@ -22,3 +23,8 @@
         </div>
     </div>
 </div>
+=======
+<div>
+    Test Post
+</div>
+>>>>>>> 9e14ce35d884afc1d26c1050ca880e2998315d05
