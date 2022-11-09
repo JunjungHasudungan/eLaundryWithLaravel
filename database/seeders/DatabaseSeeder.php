@@ -27,10 +27,7 @@ class DatabaseSeeder extends Seeder
             OutletSeeder::class,
             PaketSeeder::class,
             PostSeeder::class,
-<<<<<<< HEAD
-=======
             CommentSeeder::class,
->>>>>>> 9e14ce35d884afc1d26c1050ca880e2998315d05
         ]);
     }
 }

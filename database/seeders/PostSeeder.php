@@ -17,14 +17,7 @@ class PostSeeder extends Seeder
     {
         $posts = [
             [
-<<<<<<< HEAD
-                'name'  => 'post 1'
-            ],
-            [
-                'name'  => 'post 2'
-=======
                 'title' => 'Post Pertama'
->>>>>>> 9e14ce35d884afc1d26c1050ca880e2998315d05
             ]
         ];
 

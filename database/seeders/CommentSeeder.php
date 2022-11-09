@@ -19,6 +19,14 @@ class CommentSeeder extends Seeder
             [
                 'description'   => 'comment pertama',
                 'post_id'       => 1,
+            ],
+            [
+                'description'   => 'comment kedua',
+                'post_id'       => 1,
+            ],
+            [
+                'description'   => 'comment kedua',
+                'post_id'       => 1,
             ]
         ];
 

@@ -4,12 +4,10 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class Counter extends Component
+class Button extends Component
 {
     public $count;
 
-
-    // increment
     public function increment()
     {
         $this->count++;
@@ -22,6 +20,6 @@ class Counter extends Component
 
     public function render()
     {
-        return view('livewire.counter');
+        return view('livewire.button');
     }
 }

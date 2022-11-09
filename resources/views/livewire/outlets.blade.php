@@ -1,3 +1,3 @@
 <div>
-    {{-- The whole world belongs to you. --}}
+    <p class="text-center">Test Component</p>
 </div>

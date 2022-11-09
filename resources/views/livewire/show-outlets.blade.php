@@ -7,7 +7,10 @@
 
 <div>
     <h1 class="text-center mt-10">
-        @livewire('outlet')
+        {{-- @livewire('counter') --}}
+        @livewire('button')
+        {{-- <livewire:show-contact :contact="$contact"/> --}}
+        {{-- @livewire('show-contact', ['contact' => $contact]) --}}
     </h1>
     <ul>
         @forelse ($outlets as $item)
